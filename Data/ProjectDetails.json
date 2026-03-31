@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "ScrubHub",
+    "shortDesc": "Full-stack data cleaning app built with Next.js and FastAPI. High-performance preprocessing via Pandas and NumPy.",
+    "description": "ScrubHub is a high-performance data preprocessing engine designed to bridge the gap between messy raw data and machine-learning-ready datasets. By combining a reactive Next.js frontend with a high-speed FastAPI backend, users can upload large CSV or JSON files and perform complex cleaning operations in real-time. The application leverages the power of Pandas and NumPy to handle tasks such as missing value imputation, outlier detection, and feature scaling, all while maintaining a low-latency user experience through asynchronous processing.",
+    "tech": "Next.js, FastAPI, Tailwind, Numpy, Pandas ",
+    "image": "/images/projectimgs/doorsdirect.png",
+    "video": "",
+    "link": "https://github.com/BrandonCarp/data_clean"
+  },
+  {
+    "id": 2,
+    "title": "Doors Direct South",
+    "shortDesc": "A professional e-commerce and lead-generation platform built for Doors Direct South. Features a high-performance Next.js frontend for seamless user experience and a robust Django backend for secure order management and data processing.",
+    "description": "Developed as a custom business solution for Doors Direct South, this platform serves as a modern digital storefront and internal management system. The frontend, built with Next.js, focuses on SEO optimization and a responsive user journey for customers browsing inventory. The backend is powered by Django, providing a secure and scalable architecture for managing complex product data, customer inquiries, and lead-generation workflows. This project emphasizes performance, reliability, and ease of use for both the client and the end-user.",
+    "tech": "Next.js, Django, Tailwind, PostgreSQL",
+    "image": "/images/projectimgs/doorsdirect.png",
+    "video": "",
+    "link": "https://github.com/BrandonCarp/DoorsDirect"
+  }
+]
