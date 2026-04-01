@@ -18,10 +18,7 @@ const GithubIcon = () => (
 );
 export default function ProjectBox({ details }: { details: Projects }) {
   return (
-    /* 1. Added max-w-[280px] to keep it from hitting screen edges on 320px phones */
-    /* 2. mx-auto centers it when the screen is slightly wider than the card */
     <div className="group flex flex-col w-full max-w-[280px] sm:max-w-[350px] bg-white border border-[var(--color-accent)] rounded-2xl overflow-hidden mx-auto transition-all">
-      {/* Reduced aspect ratio to 'video' (16:9) so it's not a tall square on mobile */}
       <div className="relative aspect-video w-full bg-[#E0F2F1] flex items-center justify-center p-4">
         <Image
           src={details.image}
@@ -29,7 +26,6 @@ export default function ProjectBox({ details }: { details: Projects }) {
           width={300}
           height={168}
           priority
-          /* w-[85%] ensures the image doesn't touch the light blue edges */
           className="w-[85%] h-auto object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105"
           sizes="280px"
         />
