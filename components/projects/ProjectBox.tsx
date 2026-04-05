@@ -26,7 +26,7 @@ export default function ProjectBox({ details }: { details: Projects }) {
           width={300}
           height={168}
           priority
-          className="w-[85%] h-auto object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-105"
+          className="w-[85%] h-auto object-contain  "
           sizes="280px"
         />
       </div>

@@ -65,8 +65,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-main text-text-main">
+        <div className="flex">
+
         <Navbar />
         {children}
+        </div>
       </body>
     </html>
   );

@@ -1,16 +1,17 @@
 // components/layout/NavItem.tsx
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, SVGProps, ComponentType } from "react";
 import Link from "next/link";
 
 type NavLink = { label: string; href: string };
 
 type Props = {
   label: string;
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
   links: NavLink[];
 };
 
-export default function NavItem({ label, links }: Props) {
+export default function NavItem({ label, icon, links }: Props) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLLIElement>(null);
 

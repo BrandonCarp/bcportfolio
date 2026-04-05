@@ -2,23 +2,21 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/logo/logo1.png";
+import {HomeIcon, UserCircleIcon, CodeBracketIcon, ComputerDesktopIcon} from "@heroicons/react/24/outline"
 
 import NavItem from "@/components/navigation/NavDropDown";
 
 const navItems = [
   {
-    label: "Residential",
+    label: "Home",
+    icon: HomeIcon,
     links: [
-      { label: "All Residential Doors", href: "/residential-garage-doors" },
-      { label: "Clopay", href: "/residential/insulated" },
-      { label: "CHI", href: "/residential/CHI" },
-      { label: "Haas", href: "/residential/HAAS" },
-      { label: "Amaar", href: "/residential/AMAAR" },
+    
     ],
   },
   {
-    label: "Commercial",
+    label: "About",
+    icon: UserCircleIcon,
     links: [
       { label: "All Commercial Doors", href: "/commercial-garage-doors" },
       { label: "Clopay", href: "/residential/insulated" },
@@ -28,7 +26,8 @@ const navItems = [
     ],
   },
   {
-    label: "Operators",
+    label: "Projects",
+    icon: CodeBracketIcon,
     links: [
       { label: "All LiftMaster Products", href: "/Liftmaster" },
       { label: "Operators", href: "/Liftmaster/Operators" },
@@ -36,7 +35,8 @@ const navItems = [
     ],
   },
   {
-    label: "Springs",
+    label: "Web Design",
+    icon: ComputerDesktopIcon,
     links: [
       { label: "Torsion Springs", href: "/springs/torsion" },
       { label: "Extension Springs", href: "/springs/extension" },
@@ -70,23 +70,25 @@ export default function Navbar() {
 
   return (
     <nav
-      className={` w-full z-20 top-0 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`}
-    >
-      <div className="flex items-center justify-center mx-auto p-3 text-text-main  backdrop-blue-lg">
+      className="w-[250px] bg-bg-secondary  ml-5 mt-2 ">
+      <div className=" flex flex-col items-start gap-3 p-5">
+        {/* Logo */}
+        <div className="flex">
+          <Image src="/images/logo/kanjiwh.png" height={50} width={50} alt="Japanese Symbol for reason, principle, and truth"  />
+          <Image src="/images/logo/bcWH.png" height={50} width={50} alt="Japanese Symbol for reason, principle, and truth"  />
+        </div>
         {/* Desktop menu */}
         <div className="hidden md:block">
-          <ul className="flex items-center gap-10 lg:gap-20">
+          <ul className="flex flex-col  gap-5">
             {navItems.map((item) => (
-              <NavItem key={item.label} label={item.label} links={item.links} />
+              <NavItem key={item.label} icon={item.icon} label={item.label} links={item.links} />
             ))}
           </ul>
         </div>
       </div>
 
       {/* Mobile menu dropdown */}
-      <div
+      {/* <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out flex items-center  justify-between ${
           isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
@@ -129,7 +131,7 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 }
