@@ -63,12 +63,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+   
     <html lang="en" className={`${roboto.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bg-main text-text-main">
-        <div className="flex">
+        <div className="flex space-x-5 bg-bg-secondary rounded-lg m-3 ">
 
         <Navbar />
+        <main className="mt-2 mr-2  p-8 bg-bg-main w-[100vw] rounded-lg  ">
+
         {children}
+        </main>
         </div>
       </body>
     </html>

@@ -70,12 +70,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-[250px] bg-bg-secondary  ml-5 mt-2 ">
+      className="w-[300px]  ml-5 mt-2 rounded-lg h-[99vh] ">
       <div className=" flex flex-col items-start gap-3 p-5">
         {/* Logo */}
         <div className="flex">
-          <Image src="/images/logo/kanjiwh.png" height={50} width={50} alt="Japanese Symbol for reason, principle, and truth"  />
-          <Image src="/images/logo/bcWH.png" height={50} width={50} alt="Japanese Symbol for reason, principle, and truth"  />
+          
+          <Image src="/images/logo/bcWH.png" height={75} width={75} alt="Japanese Symbol for reason, principle, and truth"  />
         </div>
         {/* Desktop menu */}
         <div className="hidden md:block">

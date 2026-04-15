@@ -44,6 +44,7 @@ export default function NavItem({ label, icon, links }: Props) {
         <ul className="flex flex-col py-2 min-w-[180px]">
           {links.map((link) => (
             <li key={link.href}>
+              <p className="h-6 w-6">link.icon</p>
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
