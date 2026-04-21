@@ -8,21 +8,13 @@ import NavItem from "@/components/navigation/NavDropDown";
 
 const navItems = [
   {
-    label: "Home",
-    icon: HomeIcon,
-    links: [
-    
-    ],
-  },
-  {
     label: "About",
     icon: UserCircleIcon,
     links: [
-      { label: "All Commercial Doors", href: "/commercial-garage-doors" },
-      { label: "Clopay", href: "/residential/insulated" },
-      { label: "CHI", href: "/residential/CHI" },
-      { label: "Haas", href: "/residential/HAAS" },
-      { label: "Amaar", href: "/residential/AMAAR" },
+      { label: "Resume", href: "/make view pdf reminder" },
+      { label: "GItHub", href: "https://github.com/BrandonCarp" },
+      { label: "Projects", href: "/Projects" },
+      { label: "Web Design Services", href: "/design" },
     ],
   },
   {
@@ -79,9 +71,13 @@ export default function Navbar() {
         </div>
         {/* Desktop menu */}
         <div className="hidden md:block">
+
           <ul className="flex flex-col  gap-5">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
             {navItems.map((item) => (
-              <NavItem key={item.label} icon={item.icon} label={item.label} links={item.links} />
+              <NavItem key={item.label}  label={item.label} links={item.links} />
             ))}
           </ul>
         </div>
