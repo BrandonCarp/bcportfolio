@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import {HomeIcon, UserCircleIcon, CodeBracketIcon, ComputerDesktopIcon} from "@heroicons/react/24/outline"
+import {UserCircleIcon, CodeBracketIcon, ComputerDesktopIcon} from "@heroicons/react/24/outline"
 
 import NavItem from "@/components/navigation/NavDropDown";
 
